@@ -1,0 +1,84 @@
+
+<html>
+  <head><title>Form Demo</title></head>
+  <body> 
+    	<body bgcolor=lightblue>
+	<h1> Form Demo </h1>
+	<p> This webpage form1.html shows most of the GUI elements that can be used in form</p>
+	 <form method=get action=/~king/anything.php>
+	<label> User Name:</label><input type=text name=Name value="Enter Name">
+	<label> Biography:</label><textarea rows=5 column=20 name=decription></textarea>
+	<label> Discount Code:</label><input type=password name=DiscountCode value=sahil> 
+	<br>
+	User Rating:<input type=range name=userrating min=0 max=50> 
+	<br>
+	<input type=radio name=container value="wafflecone">Waffle
+	<input type=radio name=container value="sugary">Suger
+	<input type=radio name=container value="mycup">Cup
+	<br>
+	<input type=checkbox name=topping1 value="sprinky">Chocolate sprinkles
+	<input type=checkbox name=topping2 value="licq">Licorish
+	<br>
+	<input type=file name=fileserver value=view>
+	<br>
+	<select size=1 name=Funds>
+		<option value=1>prime
+		<option value=2>goldstar
+		<option value=3>TD funds
+	</select>
+	<br>
+	<input type=reset>
+	<input type=submit>
+	<input type=button name=button1 value="custom button" onclick='javascript:alert("class ends")'>
+	</form>	
+
+   <hr>
+   <h2>A 2nd form with specialized inputs</h2>
+   <form  method=GET action=anything.php>
+      <label>Date:  </label> <input type=date name=dueDate value='24/03/2022' max='24/04/2022' /><br>
+      <label>Time:   </label> <input type=time   value='08:00:00'  name=classStartTime  /></br>
+      <label>Date-Time:   </label> <input type=datetime   value='24/04/2022 8:00:00'  name=classStartTime  /></br>
+      <label>Color: </label> <input type=color name=selectedColour /><br>
+      <label>Number: </label> <input type=number min=-80 max=110 name=temperature step=2 value=-10 /> </br>
+      <label>Email:  </label>  <input type=email  name="e-address" /><br>
+      <label>URL:    </label> <input type=url  name=nextLocation  /><br>
+      <label>datalist: </label> <input type=text list=classChoice />
+                                <datalist id=classChoice>
+                                     <option value="CENG151" />
+                                     <option value="CENG153" />
+                                     <option value="CENG150" />
+                                     <option value="TMTH220" />
+                                     <option value="ESOL220" />
+                                     <option value="TECH152" />
+                                </datalist><br>
+      <label>Postal Code: </label> 
+                        <input type=text placeholder='A1A 1A1' 
+                               pattern="[[:upper:]][[:digit:]][[:upper:]] [[:digit:]][[:upper:]]"
+                             /></br>
+<label>Select/Option with Optgroups</label>
+<select name="courseSelection2" multiple=multiple>
+  <optgroup label="CENG Courses">
+    <option value="CENG151">Unix scripting and the Internet</option>
+    <option value="CENG153">CENG153</option>
+  </optgroup>
+  <optgroup label="COMM Courses">
+    <option value="ESOL220">Basic English</option>
+    <option value="TMTH220">maths</option>
+    <option value="TECH152">telecomunication</option>
+  </optgroup>
+</select><br>
+      <input type=submit value="2nd Form/Submit Button" />
+   </form>
+ <footer>
+   <ol type="i">
+    
+      <li>The date tag is used to select a date from the calender.</li>
+      <li>The time tag is used to select a certain time</li>
+      <li>The URL tag is used to enter only a URL link.</li>
+      <li>The email tag is used to get an email address.</li>
+      <li>The file upload tag is used to upload any file from your device.</li>
+      <li>The select options tag is used to select an option from the folowing list of options.</li>
+   </ol>
+	</footer>
+ </body>
+</html>
